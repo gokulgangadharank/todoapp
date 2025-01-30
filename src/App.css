@@ -1,0 +1,369 @@
+/* custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.wrapper {
+  position: relative;
+  left: 36px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: stretch;
+  height: 100%;
+  width: 100vw;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.container {
+  flex: 2;
+  order: 2;
+  display: flex;
+  width: 80%;
+  height: 80vh;
+  /* Set a height relative to the viewport */
+  max-width: 1200px;
+  /* Prevents it from getting too wide */
+  gap: 20px;
+  border-radius: 10px;
+  background: transparent;
+
+}
+
+.main-content {
+  flex: 2;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+}
+
+.container .main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgba(25, 11, 118, 0.826);
+
+
+}
+
+.container h1 {
+  position: absolute;
+  top: -58px;
+  left: 560px;
+  right: 0;
+  transform: translateX(-50%);
+  font-family: "Caveat Brush", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #cdcdcd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .main-content .input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* Adds space between input and button */
+  margin-top: 10px;
+}
+
+.container .main-content .input-container input {
+  width: 200px;
+  padding: 10px;
+  font-size: 14px;
+  border: 2px solid #ccc;
+  background-color: rgb(12, 81, 192);
+  border-radius: 10px;
+  outline: none;
+
+}
+
+.container .main-content .input-container input::placeholder {
+  color: rgb(50, 50, 50);
+  font-style: italic;
+}
+
+.container .main-content .input-container button {
+  width: auto;
+  /* Adjust width to fit content */
+  padding: 10px 20px;
+  /* Adds better spacing */
+  font-size: 14px;
+  border: 2px;
+  border-radius: 10px;
+  background-color: rgb(12, 81, 192);
+  cursor: pointer;
+}
+
+.container .main-content .input-container button:hover {
+  background-color: rgb(8, 60, 150);
+}
+
+.container .main-content .react-calendar {
+  width: 370px;
+  height: 319;
+  margin-top: 7px;
+  background: white;
+  border-radius: 7px;
+  backdrop-filter: blur(10px);
+  box-shadow: 8px 8px 5px 3px rgba(0, 0, 0, 0.212);
+}
+
+.container .main-content .react-calendar button {
+  background-color: rgb(12, 81, 192);
+  /* Change button color */
+  color: white;
+  /* Ensure text is visible */
+  border: none;
+  padding: 8px;
+  margin: 5px;
+  /* Adds gap between buttons */
+  border-radius: 5px;
+  /* Optional: rounds button corners */
+  cursor: pointer;
+}
+
+.container .main-content .react-calendar button:hover {
+  background-color: rgb(8, 60, 150);
+  /* Darker shade on hover */
+}
+
+
+
+
+.addedactivities-container {
+  flex: 1.5;
+  order: 2;
+  display: flex;
+  /* Make it a flex container */
+  flex-direction: column;
+  align-items: center;
+  /* Center content inside */
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(25, 11, 118, 0.826);;
+  border-radius: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
+.addedactivities-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.addedactivities-container::-webkit-scrollbar-track {
+  background: #d1e3ff;
+  border-radius: 10px;
+}
+
+.addedactivities-container::-webkit-scrollbar-thumb {
+  background: #4c4c4d;
+  border-radius: 10px;
+}
+
+.addedactivities-container::-webkit-scrollbar-thumb:hover {
+  background: #021e50;
+}
+
+.addedactivities-container h2 {
+  color: white;
+  text-align: center;
+}
+
+
+.addedactivities {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.sidebar {
+  order: 3;
+  flex: 1;
+  padding: 20px;
+  background-color:rgba(25, 11, 118, 0.826);
+  border-radius: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+.sidebar::-webkit-scrollbar-track {
+  background: #d1e3ff;
+  border-radius: 10px;
+}
+
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #4c4c4d;
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #021e50;
+}
+
+
+
+
+.sidebar h2 {
+  text-align: center;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+/* Responsive Design */
+
+/* For screens smaller than 1024px (Tablets) */
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+  }
+
+  .container {
+    width: 90%;
+    height: auto;
+  }
+
+  .container h1 {
+    font-size: 24px;
+    left: 50%;
+    top: -40px;
+  }
+
+  .addedactivities-container,
+  .sidebar {
+    width: 90%;
+    max-height: 400px;
+  }
+}
+
+/* For screens smaller than 768px (Mobile Devices) */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .container h1 {
+    font-size: 20px;
+    position: static;
+    text-align: center;
+  }
+
+  .input-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .input-container input,
+  .input-container button {
+    width: 100%;
+  }
+
+  .react-calendar {
+    width: 100%;
+  }
+
+  .addedactivities-container,
+  .sidebar {
+    width: 95%;
+    max-height: 300px;
+  }
+}
+
+/* For very small screens (max 480px) */
+@media (max-width: 480px) {
+  .container h1 {
+    font-size: 18px;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  .addedactivities-container,
+  .sidebar {
+    max-height: 250px;
+  }
+
+  li {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+
